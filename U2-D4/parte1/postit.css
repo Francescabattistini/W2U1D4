@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+body {
+  height: 100vh;
+  font-family: "Indie Flower";
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 74em;
+  height: 44em;
+  background-color: burlywood;
+  align-items: center;
+  border: 9px solid #222833;
+  background-size: cover;
+  background-image: url(img/1600w-TZKyF2BvAgE.webp);
+  border-radius: 26px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  position: relative;
+  gap: 26px;
+  padding: 1.5em;
+}
+h1 {
+  font-size: 2px;
+}
+.PostIt {
+  min-width: 230px;
+  height: 180px;
+  position: absolute;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  margin: 0.6em;
+  box-shadow: 0 7px 10px black;
+  transition: transform 300ms;
+}
+.giallo {
+  background-color: rgb(248, 241, 211);
+  transform: rotate(12deg);
+}
+.verde {
+  background-color: rgb(195, 227, 228);
+  transform: rotate(-10deg);
+}
+.lilla {
+  background-color: rgb(255, 197, 207);
+  transform: rotate(-2deg);
+}
+.PostIt:hover {
+  transform: scale(1.1);
+  box-shadow: 0 24px 42px rgb(0, 0, 0);
+}
