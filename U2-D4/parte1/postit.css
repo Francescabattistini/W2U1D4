@@ -30,18 +30,19 @@ body {
   padding: 1.5em;
 }
 h1 {
-  top: 1em;
   position: relative;
   align-items: center;
   font-size: 2em;
   font-weight: 800;
   color: rgb(28, 6, 84);
+  text-align: center;
 }
 p {
   font-size: 20px;
   color: rgb(28, 6, 84);
   align-items: center;
-  padding: 20px;
+
+  text-align: center;
   font-weight: bold;
 }
 .PostIt {
@@ -70,4 +71,22 @@ p {
 .PostIt:hover {
   transform: scale(1.1);
   box-shadow: 0 24px 42px rgb(0, 0, 0);
+}
+.PostIt:hover .puntina {
+  animation: cambio 2s;
+}
+.PostIt:hover {
+  transform: scale(1.1); /* grandezza quando ci passim */
+  box-shadow: 0 24px 42px black; /* qui ho messo l'ombra per dare l'idea di spessore */
+  z-index: 1000; /* serve per non far andare un elemento su un altro  */
+}
+@keyframes cambio {
+  from {
+    transform: transleteX(0%);
+  }
+  to {
+    transform: translateX(-100);
+    transform: translate(-20px, -50px);
+    opacity: 0;
+  }
 }
