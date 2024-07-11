@@ -20,7 +20,7 @@ body {
   align-items: center;
   border: 9px solid #222833;
   background-size: cover;
-  background-image: url(img/1600w-TZKyF2BvAgE.webp);
+  background-image: url(img/Screenshot\ 2024-05-30\ 161922.png);
   border-radius: 26px;
   justify-content: center;
   flex-wrap: wrap;
@@ -30,7 +30,19 @@ body {
   padding: 1.5em;
 }
 h1 {
-  font-size: 2px;
+  top: 1em;
+  position: relative;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 800;
+  color: rgb(28, 6, 84);
+}
+p {
+  font-size: 20px;
+  color: rgb(28, 6, 84);
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
 }
 .PostIt {
   min-width: 230px;
